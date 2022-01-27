@@ -6,9 +6,11 @@
   var result = ""
   function helper(value) {
   	if (value.length >= 1 && value.includes(":")) {
-  		var key = value.split(":")[0]
-        var val = value.split(":")[1]
-        result += '"' + key + '" : ' + val + ',\n'
+  		  var key = value.split(":")[0];
+        //var val = value.split(":")[1].replace('"', '');
+        var val = value.split(":")[1];
+        //result += '"' + key + '" : ' + val + ',\n'
+        result += "'" + key + "' : '" + val + "',\n";
         //alert(result)
     }
     //alert(value.length + " " + value.includes(":"))
